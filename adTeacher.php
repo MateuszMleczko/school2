@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form action="adStudent.php" method="post">
+    <form action="adTeacher.php" method="post">
         <div class="form__inputs">
             <input type="text" name="fname" placeholder="Enter ur name" required>
             <input type="text" name="sname" placeholder="Enter ur surname" required>
