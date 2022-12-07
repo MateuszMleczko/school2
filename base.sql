@@ -31,7 +31,6 @@ CREATE TABLE class_name (
 CREATE TABLE School_subject (
     id int NOT NULL AUTO_INCREMENT UNIQUE,
     sname varchar(50),
-    class_id int,
     PRIMARY KEY (id),
     FOREIGN KEY (class_id) REFERENCES class_name(id)
 );

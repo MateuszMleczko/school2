@@ -10,10 +10,9 @@
 </head>
 
 <body>
-    <form action="adStudent.php" method="post">
+    <form action="adClass.php" method="post">
         <div class="form__inputs">
-            <input type="text" name="fname" placeholder="Enter ur name" required>
-            <input type="text" name="sname" placeholder="Enter ur surname" required>
+            <input type="text" name="cname" placeholder="Enter class name" required>
             <input type="submit">
 
             <?php
@@ -33,18 +32,13 @@
 
             else{
                 mysqli_select_db($conn, 'school2');
-                
+                $cname = $_POST['cname'];
 
-                if(isset($_POST["fname"]) && isset($_POST["sname"])){
-                    
-                    $fname = $_POST['fname'];
-                    $sname = $_POST['sname'];
-
-                    $sql = "INSERT INTO student(fname, surname)  VALUES ('$fname', '$sname')";
-                        if($conn -> query($sql)) {
-                        echo "New record created successfully"; 
-                        }
-                }        
+                $sql = "INSERT INTO class_name(cname)  VALUES ('$cname')";
+                    if($conn -> query($sql)) {
+                    echo "New record created successfully"; 
+                    }
+                       
             }
         ?>
         </div>

@@ -13,7 +13,6 @@
     <form action="adSubject.php" method="post">
         <div class="form__inputs">
             <input type="text" name="sname" placeholder="Enter subject name" required>
-            <input type="text" name="classId" placeholder="Enter class id" required>
             <input type="submit">
 
             <?php
@@ -33,17 +32,12 @@
 
             else{
                 mysqli_select_db($conn, 'school2');
-                
+                $sname = $_POST['sname'];
 
-                if(isset($_POST["classId"]) && isset($_POST["sname"])){
-                    $sname = $_POST['sname'];
-                    $class_id = $_POST['classId'];
-
-                    $sql = "INSERT INTO school_subject(sname, class_id)  VALUES ('$sname', '$class_id')";
-                        if($conn -> query($sql)) {
-                        echo "New record created successfully"; 
-                        }
-                }       
+                $sql = "INSERT INTO school_subject(sname)  VALUES ('$sname')";
+                    if($conn -> query($sql)) {
+                    echo "New record created successfully"; 
+                    }        
             }
         ?>
         </div>
