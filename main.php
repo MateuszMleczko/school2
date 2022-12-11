@@ -23,6 +23,8 @@
             <input type="submit" onclick="location.href = 'adSubject.php';" value="AD SUBJECT" >
             <input type="submit" onclick="location.href = 'adStudent.php';" value="AD STUDENT" >
             <input type="submit" onclick="location.href = 'adTeacher.php';" value="AD TEACHER" >
+            <input type="submit" onclick="location.href = 'showTables.php';" value="SHOW DATA" >
+            
 
         <link rel="stylesheet" href="style.css">
 
