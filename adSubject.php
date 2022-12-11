@@ -12,9 +12,13 @@
 <body>
     <form action="adSubject.php" method="post">
         <div class="form__inputs">
+            <h1>Add Subject</h1>
             <input type="text" name="sname" placeholder="Enter subject name" required>
-            <input type="submit">
-
+            <input type="submit" value="SUBMIT">
+            <input type="submit" onclick="location.href = 'adClass.php';" value="AD CLASS" >
+            <input type="submit" onclick="location.href = 'adSubject.php';" value="AD SUBJECT" >
+            <input type="submit" onclick="location.href = 'adStudent.php';" value="AD STUDENT" >
+            <input type="submit" onclick="location.href = 'adTeacher.php';" value="AD TEACHER" >
             <?php
 
             session_start();

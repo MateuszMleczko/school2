@@ -16,7 +16,7 @@ CREATE TABLE Teacher (
     fname varchar(50),
     surname varchar(100),
     age int(3),
-    subject_name int UNIQUE,
+    subject_name varchar(20),
     PRIMARY KEY (id)
 );
 
@@ -44,4 +44,4 @@ CREATE TABLE users(
     name VARCHAR(20),
     surname VARCHAR(20),
     age INTEGER
-)
+);

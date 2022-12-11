@@ -12,10 +12,14 @@
 <body>
     <form action="adStudent.php" method="post">
         <div class="form__inputs">
+            <h1>Add Student</h1>
             <input type="text" name="fname" placeholder="Enter ur name" required>
             <input type="text" name="sname" placeholder="Enter ur surname" required>
-            <input type="submit">
-
+            <input type="submit" value="SUBMIT">
+            <input type="submit" onclick="location.href = 'adClass.php';" value="AD CLASS" >
+            <input type="submit" onclick="location.href = 'adSubject.php';" value="AD SUBJECT" >
+            <input type="submit" onclick="location.href = 'adStudent.php';" value="AD STUDENT" >
+            <input type="submit" onclick="location.href = 'adTeacher.php';" value="AD TEACHER" >
             <?php
 
             session_start();

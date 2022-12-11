@@ -11,7 +11,9 @@
 
 <body>
     <form action="register.php" method="post">
+        
         <div class="form__inputs">
+            <h1>Register</h1>
             <input type="text" name="login" placeholder="login" required>
             <input type="text" name="pass" placeholder="password" required>
             <label for="taken">are u in relationship?</label>
@@ -19,7 +21,7 @@
             <input type="text" name="fname" placeholder="Enter ur name" required>
             <input type="text" name="sname" placeholder="Enter ur surname" required>
             <input type="number" name="age" placeholder="Enter ur age" required>
-            <input type="submit">
+            <input type="submit" value="SUBMIT">
 
             <?php
 
